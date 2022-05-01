@@ -73,7 +73,28 @@ p {
   }
 }
 
-body {
-  font-family: 'Poppins', sans-serif;
+.btn {
+  padding: 14px 1.6rem;
+  border-radius: 6px;
+  border: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.btn--primary {
+  background-color: #3858d6;
+  color: white;
+}
+
+.btn--secondary {
+  background-color: #f0f3ff;
+  color: #3858d6;
+}
+
+.btn--accent {
+  background-color: #6a7ecfe5;
+  color: white;
+  border: 2px solid #f5f7ff;
 }
 /*# sourceMappingURL=main.css.map */
