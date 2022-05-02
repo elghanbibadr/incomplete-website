@@ -1,0 +1,22 @@
+.card{
+    margin-inline: auto;
+    width:60%;
+    // m
+    &__img{
+         width:100%;
+         height: auto;
+        border-radius:20px;
+    }
+    &__body{
+        margin-block: 6px;
+    }
+    &__price{
+        font-weight: bold;
+        font-size: 1.1rem;
+        margin-bottom: 10px;
+    }
+    .dollar{
+        color: $second-color;
+        margin-right: 2px;
+    }
+}

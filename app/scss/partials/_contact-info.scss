@@ -1,0 +1,34 @@
+.contact{
+    &-card{
+        background-color: white;
+        position: relative;
+        box-shadow: 0 0 10px #ccc;
+        width: fit-content;
+        padding: 10px;
+        border-radius: 7px;
+        width: 160px;
+        }
+        &__info{
+            margin-left: 1.4rem;
+            margin-block: 10px;
+            h4{
+                margin-bottom: 6px;
+            }
+        }
+        img{
+            position: absolute;
+            top: 25px;
+            height: 1.5rem;
+            background-color:$first-color-lighten;
+            padding: 1px;
+            border-radius: 50%;
+            left: 0;
+        }
+       &__btn{
+           width: 100%;
+           &:hover{
+               background-color: $first-color;
+               color: white;
+           }
+       }
+    }
