@@ -1,0 +1,16 @@
+.record-container{
+    display: flex;
+    .record{
+        margin-inline: 14px;
+        h1{
+            color: white;
+           
+        }
+        span{
+            font-size: 1.8rem;
+            margin-left:-4px;
+            font-weight: normal;
+            color: $second-color;
+        }
+    }
+}

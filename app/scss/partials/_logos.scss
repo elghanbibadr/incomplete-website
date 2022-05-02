@@ -1,0 +1,27 @@
+.logos{
+    text-align: center;
+    &__items{
+        margin-block: 2rem;
+        @include destkop{
+            .two{
+                position: relative;
+                left: 4rem;
+            }
+        }
+    
+        img{
+            height: 5rem;
+            margin: 10px;
+        }
+    }
+    @include destkop{
+         display: flex;
+         position: relative;
+        justify-content: space-around;
+        img{
+            height: 7rem;
+            margin-inline: 1rem;
+            width: 14rem;
+        }
+    }
+}
