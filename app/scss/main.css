@@ -97,4 +97,43 @@ p {
   color: white;
   border: 2px solid #f5f7ff;
 }
+
+img {
+  height: 1rem;
+}
+
+.searchBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: white;
+  padding: 5px 10px;
+  margin: 1rem 2rem;
+  border-radius: 10px;
+}
+
+.searchBar img {
+  height: 1.2rem;
+  position: relative;
+  top: 5px;
+}
+
+.searchBar .searchBar-leftBox {
+  margin-top: 10px;
+}
+
+.searchBar input {
+  border: 0;
+  padding-left: 10px;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.home {
+  background-color: #131212;
+  height: 50vh;
+}
 /*# sourceMappingURL=main.css.map */
