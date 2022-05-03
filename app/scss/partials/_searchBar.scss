@@ -1,17 +1,17 @@
 img{
     height: 1rem;
 }
-
-.searchBar{
+.barContainer{
     display: flex;
-    justify-content: space-between;
     background-color: white;
     padding:5px 10px;
     margin: 1rem 2rem;
     border-radius: 10px;
+}
+.searchBar{
+   justify-content: space-between;
     img{
         height: 1.2rem;
-        // marg-top: 1rem;
         position:relative;
         top: 5px;
     }

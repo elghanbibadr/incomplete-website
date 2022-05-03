@@ -105,17 +105,20 @@ img {
   height: 1rem;
 }
 
-.searchBar {
+.barContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   background-color: white;
   padding: 5px 10px;
   margin: 1rem 2rem;
   border-radius: 10px;
+}
+
+.searchBar {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .searchBar img {
@@ -138,5 +141,18 @@ img {
 .home {
   background-color: #131212;
   height: 50vh;
+}
+
+.iconsBar {
+  padding-block: 1rem;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.iconsBar :first-child {
+  background-color: #3858d6;
+  border-radius: 50%;
+  padding: 3px;
+  height: 1.4rem;
 }
 /*# sourceMappingURL=main.css.map */
