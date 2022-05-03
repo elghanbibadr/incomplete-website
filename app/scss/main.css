@@ -138,21 +138,81 @@ img {
   font-weight: bold;
 }
 
-.home {
+.nav {
   background-color: #131212;
   height: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1rem;
+  position: relative;
 }
 
-.iconsBar {
-  padding-block: 1rem;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+.nav__logos {
+  margin-top: 0.4rem;
 }
 
-.iconsBar :first-child {
-  background-color: #3858d6;
-  border-radius: 50%;
-  padding: 3px;
+.nav__logos img {
+  height: 1.1rem;
+  position: relative;
+  top: 2px;
+}
+
+@media (min-width: 800px) {
+  .nav {
+    padding-inline: 4rem 10rem;
+  }
+}
+
+.nav__title {
+  margin-right: 0.3rem;
+  color: white;
+  display: inline;
+}
+
+.nav__list {
+  display: none;
+}
+
+@media (min-width: 800px) {
+  .nav__list {
+    margin-top: 0.9rem;
+    margin-right: 4rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .nav__list a {
+    color: #b8bbc7;
+    margin-left: 1.7rem;
+  }
+  .nav__list img {
+    height: 1.4rem;
+  }
+}
+
+.nav__togglerLight {
   height: 1.4rem;
+}
+
+@media (min-width: 800px) {
+  .nav__togglerLight {
+    display: none;
+  }
+}
+
+.nav__btn {
+  display: none;
+}
+
+@media (min-width: 800px) {
+  .nav__btn {
+    display: block;
+    position: absolute;
+    right: 4rem;
+  }
 }
 /*# sourceMappingURL=main.css.map */

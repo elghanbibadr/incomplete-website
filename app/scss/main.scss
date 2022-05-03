@@ -3,21 +3,60 @@
 @import './partials/typography';
 @import './partials/btn';
 @import './partials/searchBar';
-.home{
+.nav{
     background-color: $heading-bg;
     height: 50vh;
-
-}
-
-
-.iconsBar{
-    padding-block: 1rem;
-    justify-content: space-around;
-    & :first-child{
-        background-color: $first-color;
-        border-radius: 50%;
-        padding: 3px;
-        height: 1.4rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    position: relative;
+    &__logos{
+        margin-top: 0.4rem;
+        img{
+            height:1.1rem;
+            position: relative;
+            top: 2px;
+        }
     }
-    // cursor: pointer;
+    @include destkop{
+    padding-inline: 4rem 10rem;
+
+    }
+    &__title{
+        margin-right:0.3rem;
+        color: white;
+        display: inline;
+    }
+    &__list{
+        display: none;
+        @include destkop{
+            margin-top: 0.9rem;
+            margin-right: 4rem;
+            display:flex;
+            a{
+                color: $text-color-light;
+                margin-left: 1.7rem;
+            }
+            img{
+                height: 1.4rem;
+            }
+        }
+    }
+    &__togglerLight{
+        height: 1.4rem;
+        @include destkop{
+            display: none;
+        }
+    }
+&__btn{
+    display: none;
+    @include destkop{
+        display: block;
+        position: absolute;
+        right: 4rem;
+    }
+
 }
+}
+
+

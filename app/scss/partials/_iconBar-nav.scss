@@ -1,0 +1,10 @@
+.iconsBar{
+    padding-block: 1rem;
+    justify-content: space-around;
+    & :first-child{
+        background-color: $first-color;
+        border-radius: 50%;
+        padding: 3px;
+        height: 1.4rem;
+    }
+}
