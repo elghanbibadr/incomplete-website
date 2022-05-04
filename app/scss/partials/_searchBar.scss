@@ -1,14 +1,18 @@
-img{
-    height: 1rem;
-}
+
 .barContainer{
     display: flex;
     background-color: white;
+    min-width: fit-content;
     padding:5px 10px;
-    margin: 1rem 2rem;
     border-radius: 10px;
 }
 .searchBar{
+    @include mobile-sm{
+        width: 100%;
+   justify-content: space-evenly;
+   transform: scale(0.9);
+    }
+    // width: 10px;
    justify-content: space-between;
     img{
         height: 1.2rem;
@@ -24,5 +28,10 @@ img{
         font-size: 0.9rem;
         font-weight: bold;
     }
-
+button{
+    padding: 1rem 1.1rem;
+    @include destkop{
+          padding: 14px 1.6rem;
+    }
+}
 }

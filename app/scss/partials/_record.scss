@@ -1,14 +1,18 @@
 .record-container{
     display: flex;
+    justify-content: space-around;
+    @include destkop{
+     justify-content: flex-start;
+    }
     .record{
-        margin-inline: 14px;
+        margin-inline: 10px;
         h1{
             color: white;
            
         }
         span{
             font-size: 1.8rem;
-            margin-left:-4px;
+            margin-left:-2px;
             font-weight: normal;
             color: $second-color;
         }

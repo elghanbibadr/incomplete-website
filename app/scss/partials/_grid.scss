@@ -1,0 +1,9 @@
+@include destkop{
+    .grid{
+        display: grid;
+        column-gap: 7rem;
+    }
+    .grid--cls2{
+        grid-template-columns: repeat(2,1fr) ;
+    }
+}

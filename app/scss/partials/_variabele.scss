@@ -8,12 +8,24 @@ $first-color: hsl(228, 66%, 53%);
   $text-color-light: hsl(228, 12%, 75%);
   $border-color: hsl(228, 99%, 98%);
   $heading-bg: #131212;
-  $desktop:800px;
+  $desktop:900px;
+  $desktopLarge:1100px;
+  $mobileSmall:370px;
 
   // mixins
-
+@mixin mobile-sm {
+  @media (max-width:$mobileSmall){
+    @content;
+  }
+}
   @mixin  destkop {
     @media (min-width:$desktop){
+      @content;
+    }
+    
+  }
+  @mixin  destkopLarge {
+    @media (min-width:$desktopLarge){
       @content;
     }
     

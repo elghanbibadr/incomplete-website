@@ -1,5 +1,4 @@
 .btn{
-    padding: 14px 1.6rem;
     border-radius: 6px;
     border: 0;
     font-size: 1rem;
@@ -7,6 +6,7 @@
     text-transform: capitalize;
     cursor: pointer;
     transition: 0.5s ease;
+    padding: 1rem;
 }
 
 .btn--primary{
