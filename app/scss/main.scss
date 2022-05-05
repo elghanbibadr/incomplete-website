@@ -8,20 +8,17 @@
 @import './partials/iconBar-nav';
 @import './partials/logos';
 @import "./partials/header";
-.logosNav{
-    position: fixed;
-    bottom: 1rem;
-    width: 70%;
-    z-index: 9999;
-    left: 0;
-    right: 0;
-    margin-inline: auto;
-    img{
-        height: 1.3rem;
-        cursor: pointer;
-    }
+@import './partials/fixedNav';
 
+.main{
+    margin-top: 19rem;
     @include destkop{
-        display: none;
+        margin-top: 4rem;
+    }
+}
+
+.logos{
+    img{
+        cursor: pointer;
     }
 }

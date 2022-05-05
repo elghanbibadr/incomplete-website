@@ -1,0 +1,19 @@
+.logosNav{
+    position: fixed;
+    bottom: 1rem;
+    width: 70%;
+    box-shadow: 0 0  10px 0 #ccc;
+    border-radius: 15px;
+    z-index: 9999;
+    left: 0;
+    right: 0;
+    margin-inline: auto;
+    img{
+        height: 1.3rem;
+        cursor: pointer;
+    }
+
+    @include destkop{
+        display: none;
+    }
+}

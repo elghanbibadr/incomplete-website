@@ -403,6 +403,9 @@ header {
   position: fixed;
   bottom: 1rem;
   width: 70%;
+  -webkit-box-shadow: 0 0  10px 0 #ccc;
+          box-shadow: 0 0  10px 0 #ccc;
+  border-radius: 15px;
   z-index: 9999;
   left: 0;
   right: 0;
@@ -418,5 +421,19 @@ header {
   .logosNav {
     display: none;
   }
+}
+
+.main {
+  margin-top: 19rem;
+}
+
+@media (min-width: 900px) {
+  .main {
+    margin-top: 4rem;
+  }
+}
+
+.logos img {
+  cursor: pointer;
 }
 /*# sourceMappingURL=main.css.map */
