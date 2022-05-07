@@ -409,6 +409,7 @@ header {
   z-index: 9999;
   left: 0;
   right: 0;
+  display: none;
   margin-inline: auto;
 }
 
@@ -423,7 +424,33 @@ header {
   }
 }
 
+.card {
+  margin-inline: auto;
+}
+
+.card__img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+.card__body {
+  margin-block: 6px;
+}
+
+.card__price {
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.card .dollar {
+  color: #eb7724;
+  margin-right: 2px;
+}
+
 .main {
+  height: 400vh;
   margin-top: 19rem;
 }
 
@@ -435,5 +462,66 @@ header {
 
 .logos img {
   cursor: pointer;
+}
+
+.popular {
+  margin-top: 4rem;
+}
+
+.popular__card {
+  margin-top: 2rem;
+  display: none;
+}
+
+.popular__heading, .popular__title {
+  margin-left: 2rem;
+}
+
+.popular .slide--active {
+  display: block;
+  width: 60%;
+  margin-inline: auto;
+}
+
+@media (min-width: 900px) {
+  .popular .slide--active {
+    width: 25%;
+    margin-inline: 1rem;
+  }
+}
+
+@media (min-width: 900px) {
+  .popular .slideContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .popular .slideContainer :nth-child(2), .popular .slideContainer :nth-child(3) {
+    width: 25%;
+    margin-inline: 1rem;
+    display: block;
+  }
+}
+
+.popular__actionBtns {
+  margin-top: 2em;
+  text-align: center;
+}
+
+.popular__actionBtns .arrow {
+  cursor: pointer;
+  height: 10px;
+  border: 2px solid #ccc;
+  display: inline;
+  border-radius: 15px;
+  padding: 7px 0.6rem;
+}
+
+@media (min-width: 900px) {
+  .popular .card__footer {
+    display: none !important;
+  }
 }
 /*# sourceMappingURL=main.css.map */
