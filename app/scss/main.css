@@ -524,4 +524,56 @@ header {
     display: none !important;
   }
 }
+
+.value {
+  margin-top: 4rem;
+  padding-left: 1rem;
+}
+
+.value__title {
+  color: #eb7724;
+  font-weight: bold;
+}
+
+.value__heading {
+  margin-block: 0.2rem;
+}
+
+.value .accordion__question {
+  margin-top: 1.3rem;
+  border: 1px solid #ccc;
+  padding: 1rem;
+  -webkit-box-shadow: 0 0  10px 0 #ccc;
+          box-shadow: 0 0  10px 0 #ccc;
+  margin-inline: 1.8rem;
+}
+
+.value .accordion__question img {
+  height: 1rem;
+  background-color: #f0f3ff;
+  padding: 2px;
+  cursor: pointer;
+}
+
+.value .accordion__question .question-heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.value .accordion__question .question-heading h4 {
+  margin-inline: 1rem 1.3rem;
+}
+
+.value .accordion__question .question__body {
+  margin-block: 1rem;
+}
+
+.value .valueImg {
+  text-align: center;
+}
+
+.value .valueImg img {
+  border: 1px solid #ccc;
+}
 /*# sourceMappingURL=main.css.map */

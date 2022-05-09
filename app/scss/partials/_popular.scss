@@ -1,0 +1,64 @@
+.main{
+    height: 400vh;
+    margin-top: 19rem;
+    @include destkop{
+        margin-top: 4rem;
+    }
+}
+
+.logos{
+    img{
+        cursor: pointer;
+    }
+}
+
+.popular{
+    margin-top: 4rem;
+    &__card{
+        margin-top: 2rem;
+        
+        display: none;
+
+    }
+    &__heading,&__title{
+        margin-left: 2rem;
+    }
+   .slide--active{
+       display: block;
+       width: 60%;
+       margin-inline: auto;
+       @include destkop{
+        width: 25%;
+        margin-inline: 1rem;
+    }
+   }
+   @include destkop{
+       .slideContainer{
+        display: flex;
+        justify-content: space-around;
+       }
+       .slideContainer :nth-child(2),  .slideContainer :nth-child(3){
+    width: 25%;
+    margin-inline: 1rem;
+    display: block;
+       }
+   }
+    &__actionBtns{
+        margin-top: 2em;
+        text-align: center;
+                .arrow{
+            cursor: pointer;
+            height: 10px;
+            border:2px solid #ccc;
+              display:inline;
+            border-radius: 15px;
+            padding:7px 0.6rem;
+        }
+    }
+    @include destkop{
+        .card__footer{
+            display: none !important;
+        }
+
+    }
+}

@@ -18,7 +18,7 @@ $first-color: hsl(228, 66%, 53%);
     @content;
   }
 }
-  @mixin  destkop {
+  @mixin destkop {
     @media (min-width:$desktop){
       @content;
     }

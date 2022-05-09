@@ -10,68 +10,52 @@
 @import "./partials/header";
 @import './partials/fixedNav';
 @import './partials/card';
+@import './partials/popular';
 
-.main{
-    height: 400vh;
-    margin-top: 19rem;
-    @include destkop{
-        margin-top: 4rem;
+.value{
+    margin-top: 4rem;
+    padding-left: 1rem;
+    &__title{
+            color:$second-color;
+            font-weight: bold;
     }
-}
+  
+    &__heading{
+        margin-block: 0.2rem;
+    }
 
-.logos{
+    // question
+    .accordion__question{
+        margin-top: 1.3rem;
+        border: 1px solid #ccc;
+        padding: 1rem;
+        box-shadow: 0 0  10px 0 #ccc;
+        // width: fit-content;
+        margin-inline: 1.8rem;
+          // img
     img{
+        height: 1rem;
+        background-color:$first-color-lighten;
+        padding:2px;
         cursor: pointer;
     }
+        .question-heading{
+            display: flex;
+            h4{
+                margin-inline: 1rem 1.3rem;
+            }
+        }
+        .question__body{
+            margin-block: 1rem;
+        }
+    }
+.valueImg{
+    // margin: 1rem auto;
+    text-align: center;
+    img{
+        border: 1px solid #ccc;
+      
+    }
 }
 
-.popular{
-    margin-top: 4rem;
-    &__card{
-        margin-top: 2rem;
-        
-        display: none;
-
-    }
-    &__heading,&__title{
-        margin-left: 2rem;
-    }
-   .slide--active{
-       display: block;
-       width: 60%;
-       margin-inline: auto;
-       @include destkop{
-        width: 25%;
-        margin-inline: 1rem;
-    }
-   }
-   @include destkop{
-       .slideContainer{
-        display: flex;
-        justify-content: space-around;
-       }
-       .slideContainer :nth-child(2),  .slideContainer :nth-child(3){
-    width: 25%;
-    margin-inline: 1rem;
-    display: block;
-       }
-   }
-    &__actionBtns{
-        margin-top: 2em;
-        text-align: center;
-                .arrow{
-            cursor: pointer;
-            height: 10px;
-            border:2px solid #ccc;
-              display:inline;
-            border-radius: 15px;
-            padding:7px 0.6rem;
-        }
-    }
-    @include destkop{
-        .card__footer{
-            display: none !important;
-        }
-
-    }
 }
